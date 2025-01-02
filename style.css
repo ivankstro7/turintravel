@@ -21,7 +21,7 @@
 /*navbar*/
 .navbar {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
     padding: 12px 24px !important;
 }
 
@@ -66,13 +66,17 @@
     overflow: hidden;
 }
 
+#heroimage .container-fluid{
+    padding: 0 !important;
+}
+
 #heroimage .content-heroimage {
-    padding: 8rem 1rem 1rem 1rem;
+    padding-top: 8rem;
 }
 
 #heroimage .content-heroimage .heroimage-title {
-    margin-bottom: 1.5rem;
     color: var(--white);
+    padding: 1rem;
 }
 
 #heroimage .content-heroimage .heroimage-title h1 {
@@ -98,7 +102,7 @@
 #heroimage .content-heroimage .heroimage-img-grid{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 #heroimage .content-heroimage .heroimage-img-grid span{
@@ -136,4 +140,13 @@
     width: 100%;
     height: 220px;
     padding: 1rem;
+}
+
+#heroimage .content-heroimage .img-clouds{
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/clouds.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
 }
