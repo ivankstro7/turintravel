@@ -270,17 +270,23 @@
 
 /*destinatios*/
 #destinations {
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/destinations-bg.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     padding: 2.25rem 0;
 }
 
 #destinations .content-destinations h2 {
     font-size: 2.25rem;
+    color: var(--white);
     margin-bottom: 8px;
 }
 
 #destinations .content-destinations p {
     font-family: var(--secondary-font);
-    color: var(--gray-800);
+    color: var(--white);
 }
 
 #destinations .content-destinations .list-group {
@@ -294,6 +300,7 @@
     flex: 0 0 auto;
     width: 350px;
     height: auto;
+    border: none;
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay {
@@ -332,3 +339,57 @@
     font-size: 1.5rem;
 }
 
+#destinations .content-destinations #carouselExampleSlidesOnly {
+    padding: 2.25rem 0;
+    text-align: center;
+}
+
+#destinations .content-destinations #carouselExampleSlidesOnly h5{
+    font-family: var(--secondary-font);
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+#destinations .content-destinations #carouselExampleSlidesOnly p{
+    font-weight: 300;
+}
+
+#destinations .content-destinations .rate {
+    background-color: var(--green-900);
+    border: 1px solid var(--green-500);
+    border-radius: 0.5rem;
+    padding: 16px 24px;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--white);
+    text-align: center;
+}
+
+#destinations .destinations-img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#destinations .destinations-model {
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/destinations-img.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 375px;
+}
+
+#destinations .destinations-clouds {
+    position: absolute;
+    bottom: -136px;
+    left: 0;
+    right: 0;
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/clouds.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
