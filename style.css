@@ -1,0 +1,56 @@
+* {
+    font-family: 'Bebas Neue','Noto Sans', serif;
+}
+
+:root {
+    /*Colores*/
+    --white: #fff;
+    --green-gray-100: #E9E6DD;
+    --green-gray-200: #FAF9F6;
+    --gray-800: #373737;
+    --gray-900: #000;
+    --green-200: #E8F5E9;
+    --green-500: #79DE90;
+    --green-900: #364E3B;
+    --yellow-500: #FDD981;
+    --red-500: #D71712;
+    --primary-font: 'Bebas Neue', serif;
+    --secondary-font: 'Noto Sans', serif;
+}
+
+/*navbar*/
+.navbar {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    padding: 12px 24px !important;
+}
+
+.navbar .navbar-brand img{
+    width: 50%;
+}
+
+.navbar .navbar-collapse{
+    justify-content: center;
+}
+
+.navbar .navbar-collapse .navbar-nav{
+    text-align: center;
+}
+
+.navbar .navbar-collapse .nav-link{
+    color: var(--gray-900);
+}
+
+.navbar .navbar-collapse .navbar-buttons-grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.navbar .navbar-collapse .navbar-buttons-grid .btn-light{
+    margin: 0 0 16px 0;
+}
+
+.navbar .navbar-collapse .navbar-buttons-grid .btn-primary{
+    background-color: var(--red-500);
+    border: none;
+}
