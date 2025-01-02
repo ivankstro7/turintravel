@@ -159,9 +159,6 @@
 
 #why-us .content-why-us {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 249, 246, 1));
-    border: 1px solid transparent;
-    background-image: linear-gradient(to bottom, #fff, #FAF9F6);
-    border-image: linear-gradient(to bottom, #fff, #FAF9F6) 1;
     border-radius: 1rem;
 }
 
@@ -224,8 +221,49 @@
     text-align: center;
 }
 
-#who .content-who .who-body .list-group li{
+#who .content-who .who-body .list-group li {
     width: 50%;
     background-color: var(--yellow-500);
     border-color: var(--white);
+}
+
+/*how it works*/
+#how-it-works {
+    padding: 0 1rem 1rem 1rem;
+}
+
+#how-it-works .content-works h2 {
+    font-size: 2.25rem;
+    margin-bottom: 8px;
+}
+
+#how-it-works .content-works p {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
+}
+
+#how-it-works .works-list {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 249, 246, 1));
+    border-radius: 0 0 1rem 1rem;
+}
+
+#how-it-works .works-list li {
+    margin-bottom: 1rem;
+    border: 1px solid var(--green-gray-100);
+    border-radius: 1rem;
+}
+
+#how-it-works .works-list ul li img {
+    margin-bottom: 1rem;
+}
+
+#how-it-works .works-list ul li h5 {
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    color: var(--gray-800);
+}
+
+#how-it-works .works-list ul li p {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
 }
