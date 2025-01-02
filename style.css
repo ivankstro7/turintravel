@@ -350,6 +350,12 @@
     margin-bottom: 1rem;
 }
 
+#destinations .content-destinations #carouselExampleSlidesOnly img{
+    width: 16%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 #destinations .content-destinations #carouselExampleSlidesOnly p{
     font-weight: 300;
 }
