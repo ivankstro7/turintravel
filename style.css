@@ -294,13 +294,21 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 16px;
+    border-radius: 0;
 }
 
 #destinations .content-destinations .list-group .card {
     flex: 0 0 auto;
     width: 350px;
     height: auto;
-    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0px;
+}
+
+#destinations .content-destinations .list-group .card img{
+    border-radius: 0;
+    border: 0px;
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay {
