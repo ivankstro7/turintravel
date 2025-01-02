@@ -1,5 +1,5 @@
 * {
-    font-family: 'Bebas Neue','Noto Sans', serif;
+    font-family: 'Bebas Neue', 'Noto Sans', serif;
 }
 
 :root {
@@ -25,33 +25,33 @@
     padding: 12px 24px !important;
 }
 
-.navbar .navbar-brand img{
+.navbar .navbar-brand img {
     width: 50%;
 }
 
-.navbar .navbar-collapse{
+.navbar .navbar-collapse {
     justify-content: center;
 }
 
-.navbar .navbar-collapse .navbar-nav{
+.navbar .navbar-collapse .navbar-nav {
     text-align: center;
 }
 
-.navbar .navbar-collapse .nav-link{
+.navbar .navbar-collapse .nav-link {
     color: var(--gray-900);
 }
 
-.navbar .navbar-collapse .navbar-buttons-grid{
+.navbar .navbar-collapse .navbar-buttons-grid {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.navbar .navbar-collapse .navbar-buttons-grid .btn-light{
+.navbar .navbar-collapse .navbar-buttons-grid .btn-light {
     margin: 0 0 16px 0;
 }
 
-.navbar .navbar-collapse .navbar-buttons-grid .btn-primary{
+.navbar .navbar-collapse .navbar-buttons-grid .btn-primary {
     background-color: var(--red-500);
     border: none;
 }
@@ -66,7 +66,7 @@
     overflow: hidden;
 }
 
-#heroimage .container-fluid{
+#heroimage .container-fluid {
     padding: 0 !important;
 }
 
@@ -100,18 +100,18 @@
     padding: 16px 24px;
 }
 
-#heroimage .content-heroimage .heroimage-img-grid{
+#heroimage .content-heroimage .heroimage-img-grid {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-#heroimage .content-heroimage .heroimage-img-grid span{
+#heroimage .content-heroimage .heroimage-img-grid span {
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#heroimage .content-heroimage .heroimage-img-grid .img-europa{
+#heroimage .content-heroimage .heroimage-img-grid .img-europa {
     background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/europa.png?raw=true');
     background-size: cover;
     background-position: center;
@@ -122,7 +122,7 @@
     margin-bottom: 1rem;
 }
 
-#heroimage .content-heroimage .heroimage-img-grid .img-medio-oriente{
+#heroimage .content-heroimage .heroimage-img-grid .img-medio-oriente {
     background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/medio-oriente.png?raw=true');
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@
     margin-bottom: 1rem;
 }
 
-#heroimage .content-heroimage .heroimage-img-grid .img-tierra-santa{
+#heroimage .content-heroimage .heroimage-img-grid .img-tierra-santa {
     background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/tierra-santa.png?raw=true');
     background-size: cover;
     background-position: center;
@@ -143,7 +143,7 @@
     padding: 1rem;
 }
 
-#heroimage .content-heroimage .img-clouds{
+#heroimage .content-heroimage .img-clouds {
     background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/clouds.png?raw=true');
     background-size: cover;
     background-position: center;
@@ -153,11 +153,11 @@
 }
 
 /*why us*/
-#why-us{
+#why-us {
     padding: 0 1rem 1rem 1rem;
 }
 
-#why-us .content-why-us{
+#why-us .content-why-us {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 249, 246, 1));
     border: 1px solid transparent;
     background-image: linear-gradient(to bottom, #fff, #FAF9F6);
@@ -165,29 +165,67 @@
     border-radius: 1rem;
 }
 
-#why-us .content-why-us h2{ 
+#why-us .content-why-us h2 {
     font-size: 2.25rem;
 }
 
-#why-us .content-why-us p{ 
+#why-us .content-why-us p {
     font-family: var(--secondary-font);
     color: var(--gray-800);
 }
 
-#why-us .content-why-us .list-group-cards .card{
+#why-us .content-why-us .list-group-cards .card {
     border-color: var(--green-gray-100);
     margin-bottom: 1rem;
 }
 
-#why-us .content-why-us .list-group-cards .card .card-body img{
+#why-us .content-why-us .list-group-cards .card .card-body img {
     width: 13%;
     margin-bottom: 1rem;
 }
 
-#why-us .content-why-us .list-group-cards .card .card-body h5{
+#why-us .content-why-us .list-group-cards .card .card-body h5 {
     margin-bottom: 1.5rem;
 }
 
-#why-us .content-why-us .list-group-cards .card:nth-child(2){
+#why-us .content-why-us .list-group-cards .card:nth-child(2) {
     background-color: var(--green-200);
+}
+
+/*who we are*/
+#who {
+    padding: 2.25rem 0;
+}
+
+#who .content-who .who-images {
+    display: flex;
+    column-gap: 8px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+#who .content-who .who-images img {
+    width: 50%;
+}
+
+#who .content-who .who-body h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#who .content-who .who-body p {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
+    margin-bottom: 1.5rem;
+}
+
+#who .content-who .who-body .list-group {
+    width: 100%;
+    text-align: center;
+}
+
+#who .content-who .who-body .list-group li{
+    width: 50%;
+    background-color: var(--yellow-500);
+    border-color: var(--white);
 }
