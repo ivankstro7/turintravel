@@ -512,3 +512,71 @@
 }
 
 /*footer*/
+#footer {
+    background-color: #22262F;
+    padding: 1.5rem 0.5rem;
+}
+
+#footer .content-footer .card {
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/footer-bg.jpeg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+#footer .content-footer .card .card-img {
+    color: var(--white);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    padding: 1rem;
+}
+
+#footer .content-footer .card .card-img span {
+    color: var(--yellow-500);
+}
+
+#footer .content-footer .card .card-img p {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+
+#footer .content-footer .footer-detail {
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#footer .content-footer .footer-detail .footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+#footer .content-footer .footer-detail .footer-logo img {
+    width: 50%;
+}
+
+#footer .content-footer .footer-detail .footer-logo p {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+
+#footer .content-footer .footer-detail .footer-info .info-contact {
+    margin-bottom: 1.5rem;
+}
+
+#footer .content-footer .footer-detail .footer-info .info-contact h5 {
+    font-size: 1.5rem;
+    color: #757575;
+}
+
+#footer .content-footer .footer-detail .footer-info .info-contact .list-group .list-group-item {
+    background-color: #22262F;
+    color: var(--white);
+    font-size: 1.5rem;
+    border: 0;
+} 
+
+#footer .content-footer .footer-detail .footer-info .social-media-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
