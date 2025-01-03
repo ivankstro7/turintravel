@@ -51,8 +51,9 @@
     margin: 0 0 16px 0;
 }
 
-.navbar .navbar-collapse .navbar-buttons-grid .btn-primary {
+.navbar .navbar-collapse .navbar-buttons-grid .secundary {
     background-color: var(--red-500);
+    color: var(--white);
     border: none;
 }
 
@@ -552,6 +553,7 @@
 
 #footer .content-footer .footer-detail .footer-logo img {
     width: 50%;
+    margin-bottom: 1.5rem;
 }
 
 #footer .content-footer .footer-detail .footer-logo p {
@@ -573,10 +575,156 @@
     color: var(--white);
     font-size: 1.5rem;
     border: 0;
-} 
+}
+
+#footer .content-footer .footer-detail .footer-info .info-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #footer .content-footer .footer-detail .footer-info .social-media-icons {
-    display: flex;
-    justify-content: space-evenly;
     margin-bottom: 1.5rem;
+}
+
+#footer .content-footer .footer-detail .footer-info .social-media-icons a {
+    margin-right: 0.5rem;
+}
+
+#footer .content-footer .footer-detail .footer-info .social-media-icons a:nth-child(4) {
+    margin-right: 0;
+}
+
+/*landscape phones, 608px*/
+@media (min-width: 608px) {
+    #heroimage .content-heroimage .heroimage-title .btn-light {
+        width: auto;
+    }
+
+    #heroimage .content-heroimage .heroimage-img-grid {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    #heroimage .content-heroimage .heroimage-img-grid .img-europa {
+        width: 50%;
+        height: 60vh;
+        margin-bottom: 0;
+    }
+
+    #heroimage .content-heroimage .heroimage-img-grid .img-grid-row {
+        width: 50%;
+    }
+
+    #why-us .content-why-us .list-group-cards .card .card-body img {
+        width: 7%;
+    }
+
+    #how-it-works .works-list .img-model {
+        width: 50%;
+    }
+
+    #destinations .content-destinations #carouselExampleSlidesOnly img {
+        width: 8%;
+    }
+
+    #footer .content-footer .footer-detail .footer-logo img {
+        width: 25%;
+    }
+}
+
+/*tablets, 768px*/
+@media (min-width: 768px) {
+    #heroimage .content-heroimage .heroimage-img-grid .img-medio-oriente {
+        height: 29vh;
+    }
+
+    #heroimage .content-heroimage .heroimage-img-grid .img-tierra-santa {
+        height: 29vh;
+    }
+
+    #footer .content-footer .footer-detail .footer-logo img {
+        width: 15%;
+    }
+}
+
+/*desktop, 992px*/
+@media (min-width: 992px) {
+    .navbar .navbar-brand {
+        width: 100px;
+    }
+
+    .navbar .navbar-brand img {
+        width: 100%;
+    }
+
+    .navbar .navbar-collapse {
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-collapse .navbar-buttons-grid {
+        flex-direction: row;
+        column-gap: 16px;
+    }
+
+    #why-us .content-why-us .list-group-cards {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 16px;
+    }
+
+    #why-us .content-why-us .list-group-cards .card {
+        width: 33%;
+    }
+
+    #why-us .content-why-us .list-group-cards .card .card-body img {
+        width: 14%;
+    }
+
+    #who .content-who {
+        display: flex;
+    }
+
+    #who .content-who .who-images img {
+        height: 50vh;
+    }
+
+    #who .content-who .who-body {
+        padding: 1rem;
+    }
+
+    #how-it-works .works-list .img-model {
+        width: 36%;
+    }
+
+    #destinations .content-destinations #carouselExampleSlidesOnly {
+        padding: 3rem;
+    }
+
+    #destinations .content-destinations .rate {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/*desktop, 1200px*/
+@media (min-width: 1200px) {
+    #how-it-works .works-list {
+        display: flex;
+        align-items: center;
+    }
+
+    #how-it-works .works-list li {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    #how-it-works .works-list li .item-header {
+        display: flex;
+        align-items: center;
+    }
+
+    #how-it-works .works-list li .item-header img {
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
 }
