@@ -172,6 +172,11 @@
     color: var(--gray-800);
 }
 
+#why-us .content-why-us p strong {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
+}
+
 #why-us .content-why-us .list-group-cards .card {
     border-color: var(--green-gray-100);
     margin-bottom: 1rem;
@@ -233,6 +238,10 @@
     padding: 0 1rem 1rem 1rem;
 }
 
+#how-it-works .content-works {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 249, 246, 1));
+}
+
 #how-it-works .content-works h2 {
     font-size: 2.25rem;
     margin-bottom: 8px;
@@ -243,15 +252,24 @@
     color: var(--gray-800);
 }
 
+#how-it-works .content-works p strong {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
+}
+
 #how-it-works .works-list {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 249, 246, 1));
     border-radius: 0 0 1rem 1rem;
 }
 
 #how-it-works .works-list li {
     margin-bottom: 1rem;
+    padding: 1rem;
     border: 1px solid var(--green-gray-100);
     border-radius: 1rem;
+}
+
+#how-it-works .works-list li .item-header {
+    margin-bottom: 0.5rem;
 }
 
 #how-it-works .works-list ul li img {
@@ -267,6 +285,7 @@
 #how-it-works .works-list ul li p {
     font-family: var(--secondary-font);
     color: var(--gray-800);
+    margin-bottom: 0;
 }
 
 /*destinatios*/
@@ -282,10 +301,15 @@
 #destinations .content-destinations h2 {
     font-size: 2.25rem;
     color: var(--white);
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 #destinations .content-destinations p {
+    font-family: var(--secondary-font);
+    color: var(--white);
+}
+
+#destinations .content-destinations p strong {
     font-family: var(--secondary-font);
     color: var(--white);
 }
@@ -300,7 +324,7 @@
 
 #destinations .content-destinations .list-group .card {
     flex: 0 0 auto;
-    width: 320px;
+    width: 90%;
     height: auto;
     background-color: transparent;
     border-radius: 0;
@@ -313,7 +337,8 @@
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay {
-    top: 255px !important;
+    top: auto !important;
+    bottom: 16px !important;
     color: var(--white);
 }
 
@@ -376,6 +401,13 @@
     text-align: center;
 }
 
+#destinations .content-destinations .rate strong {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
 #destinations .destinations-img {
     position: relative;
     width: 100%;
@@ -387,7 +419,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 375px;
+    height: 35vh;
 }
 
 #destinations .destinations-clouds {
@@ -418,6 +450,11 @@
     color: var(--gray-800);
 }
 
+#Circuits .content-circuits p strong {
+    font-family: var(--secondary-font);
+    color: var(--gray-800);
+}
+
 #Circuits .content-circuits .list-group {
     display: flex;
     flex-direction: row;
@@ -428,7 +465,7 @@
 
 #Circuits .content-circuits .list-group .card {
     flex: 0 0 auto;
-    width: 320px;
+    width: 90%;
     height: auto;
     background-color: transparent;
     border-radius: 0;
@@ -441,7 +478,8 @@
 }
 
 #Circuits .content-circuits .list-group .card .card-img-overlay {
-    top: 255px !important;
+    top: auto !important;
+    bottom: 16px !important;
     color: var(--white);
 }
 
@@ -589,10 +627,21 @@
 
 #footer .content-footer .footer-detail .footer-info .social-media-icons a {
     margin-right: 0.5rem;
+    text-decoration: none;
 }
 
 #footer .content-footer .footer-detail .footer-info .social-media-icons a:nth-child(4) {
     margin-right: 0;
+}
+
+@media (min-width: 375px) and (max-width: 607.98px) {
+    #destinations .content-destinations .list-group .card {
+        width: 90%;
+    }
+
+    #Circuits .content-circuits .list-group .card {
+        width: 90%;
+    }
 }
 
 /*landscape phones, 608px*/
@@ -624,8 +673,16 @@
         width: 50%;
     }
 
+    #destinations .content-destinations .list-group .card {
+        width: 55%;
+    }
+
     #destinations .content-destinations #carouselExampleSlidesOnly img {
         width: 8%;
+    }
+
+    #Circuits .content-circuits .list-group .card {
+        width: 55%;
     }
 
     #footer .content-footer .footer-detail .footer-logo img {
@@ -643,6 +700,18 @@
         height: 29vh;
     }
 
+    #destinations .content-destinations .list-group .card {
+        width: 43%;
+    }
+
+    #destinations .destinations-model {
+        height: 50vh;
+    }
+
+    #Circuits .content-circuits .list-group .card {
+        width: 43%;
+    }
+
     #footer .content-footer .footer-detail .footer-logo img {
         width: 15%;
     }
@@ -656,6 +725,10 @@
 
     .navbar .navbar-brand img {
         width: 100%;
+    }
+
+    .navbar .navbar-collapse .navbar-nav {
+        margin: auto;
     }
 
     .navbar .navbar-collapse {
@@ -725,6 +798,201 @@
 
     #how-it-works .works-list li .item-header img {
         margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+}
+
+/*desktop, 1400px*/
+@media (min-width: 1400px) {
+    #heroimage .content-heroimage .hero-grid {
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    #heroimage .content-heroimage .heroimage-title {
+        padding: 0;
+    }
+
+    #heroimage .content-heroimage .heroimage-title h1 {
+        font-size: 3.75rem;
+    }
+
+    #heroimage .content-heroimage .heroimage-img-grid {
+        padding: 0;
+    }
+
+    #why-us .content-why-us {
+        margin: auto;
+    }
+
+    #why-us .content-why-us .why-us-detail {
+        margin: auto;
+    }
+
+    #why-us .content-why-us .why-us-detail h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #why-us .content-why-us p {
+        margin-bottom: 1.5rem;
+    }
+
+    #why-us .content-why-us .list-group-cards .card {
+        margin-bottom: 3.75rem;
+    }
+
+    #who .content-who {
+        margin: auto;
+        align-items: center;
+    }
+
+    #who .content-who .who-images img {
+        height: auto;
+    }
+
+    #who .content-who .who-body {
+        padding: 6rem;
+    }
+
+    #how-it-works {
+        margin: auto;
+        padding: 3.75rem 0 3.75rem 0;
+    }
+
+    #how-it-works .content-works .works-detail {
+        margin: auto;
+    }
+
+    #how-it-works .content-works .works-detail h2 {
+        font-size: 3rem;
+    }
+
+    #how-it-works .works-list {
+        justify-content: space-between;
+    }
+
+    #destinations .content-destinations {
+        margin: auto;
+        padding: 3.75rem 0 3.75rem 0;
+    }
+
+    #destinations .content-destinations h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #destinations .content-destinations p {
+        margin-bottom: 1.5rem;
+    }
+
+    #destinations .content-destinations .list-group {
+        padding-top: 2.25rem;
+    }
+
+    #destinations .content-destinations .list-group .card {
+        flex: auto;
+    }
+
+    #destinations .content-destinations .list-group .card .card-img-overlay {        
+        top: auto !important;
+    }
+
+    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
+        height: 6vh;
+    }
+
+    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+        height: 6vh;
+    }
+
+    #destinations .content-destinations #carouselExampleSlidesOnly {
+        margin: auto;
+    }
+
+    #destinations .destinations-model {
+        height: 60vh;
+    }
+
+    #Circuits .content-circuits {
+        margin: auto;
+        padding: 3.75rem 0 3.75rem 0;
+    }
+
+    #Circuits .content-circuits h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #Circuits .content-circuits p {
+        margin-bottom: 1.5rem;
+    }
+
+    #Circuits .content-circuits .list-group {
+        padding-top: 2.25rem;
+    }
+
+    #Circuits .content-circuits .list-group .card {
+        flex: auto;
+    }
+
+    #Circuits .content-circuits .list-group .card .card-img-overlay {
+        top: auto !important;
+    }
+
+    #Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons {
+        height: 6vh;
+    }
+
+    #Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+        height: 6vh;
+    }
+
+    #faq {
+        padding: 2.25rem 0 2.25rem 0;
+    }
+
+    #faq .content-faq {
+        margin: auto;
+    }
+
+    #faq .content-faq h2 {
+        font-size: 3rem;
+    }
+
+    .content-footer {
+        margin: auto;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .content-footer .card .card-img h5 {
+        font-size: 3.75rem;
+    }
+
+    #footer .content-footer .footer-detail {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.25rem;
+        padding: 0;
+        text-align: start;
+    }
+
+    #footer .content-footer .footer-detail .footer-logo {
+        margin-bottom: 0;
+    }
+
+    #footer .content-footer .footer-detail .footer-info .info-contact .list-group .list-group-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #footer .content-footer .footer-detail .footer-info .info-social-media {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer .content-footer .footer-detail .footer-info .social-media-icons {
         margin-bottom: 0;
     }
 }
