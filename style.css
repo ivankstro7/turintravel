@@ -417,9 +417,28 @@
     text-align: center;
 }
 
+#destinations .content-destinations #carouselExampleSlidesOnly .body-avatar .avatar-content {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--green-900);
+    border: 1px solid var(--green-500);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+#destinations .content-destinations #carouselExampleSlidesOnly .body-avatar .avatar-content h6 {
+    font-family: var(--secondary-font);
+    margin-bottom: 0;
+}
+
 #destinations .content-destinations #carouselExampleSlidesOnly h5 {
     font-family: var(--secondary-font);
     color: var(--white);
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
