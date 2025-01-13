@@ -339,7 +339,6 @@
 
 #destinations .content-destinations .list-group .card .card-img-overlay {
     top: auto !important;
-    bottom: 16px !important;
     color: var(--white);
 }
 
@@ -359,7 +358,7 @@
 
 #destinations .content-destinations .list-group .card .card-img-overlay .card-detail {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay .card-detail .date {
@@ -368,14 +367,14 @@
     margin-bottom: 0.5rem;
 }
 
-#destinations .content-destinations .list-group .card .card-img-overlay .card-detail .date h6 {
-    font-family: var(--secondary-font);
+#destinations .content-destinations .list-group .card .card-img-overlay .card-detail .date h5 {
     margin-right: 0.5rem;
     margin-bottom: 0;
 }
 
-#destinations .content-destinations .list-group .card .card-img-overlay .card-detail .date p {
-    margin-bottom: 0;
+#destinations .content-destinations .list-group .card .card-img-overlay .card-detail .date p {    
+    font-family: var(--secondary-font);
+    margin-bottom: 0;    
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay .card-detail .days {
@@ -383,22 +382,14 @@
     align-items: center;
 }
 
-#destinations .content-destinations .list-group .card .card-img-overlay .card-detail .days h6 {
-    font-family: var(--secondary-font);
-    margin-right: 0.5rem;
-    margin-bottom: 0;
-}
-
 #destinations .content-destinations .list-group .card .card-img-overlay .card-detail .days p {
+    font-family: var(--secondary-font);
+    margin-left: 0.5rem;
     margin-bottom: 0;
-}
-
-#destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
-    display: flex;
-    justify-content: space-between;
 }
 
 #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+    width: 100%;
     font-family: var(--secondary-font);
     font-weight: 500;
     padding: 12px 16px;
@@ -410,7 +401,8 @@
 
 #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .destinations-detail p {
     font-family: var(--primary-font);
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 0;
 }
 
 #destinations .content-destinations #carouselExampleSlidesOnly {
@@ -815,6 +807,16 @@
         width: 36%;
     }
 
+    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+        width: 40%;
+    }
+
     #destinations .content-destinations #carouselExampleSlidesOnly {
         padding: 3rem;
     }
@@ -971,10 +973,12 @@
     }
 
     #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
-        height: 6vh;
+        height: 7vh;
+        align-items: center;
     }
 
     #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+        width: 50%;
         height: 6vh;
     }
 
