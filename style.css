@@ -108,12 +108,13 @@
 }
 
 #heroimage .content-heroimage .heroimage-img-grid span {
+    font-size: 1.125rem;
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 #heroimage .content-heroimage .heroimage-img-grid .img-europa {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/europa.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/paris.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,13 +225,19 @@
 
 #who .content-who .who-body .list-group {
     width: 100%;
-    text-align: center;
+    margin-top: 1rem;
+}
+
+#who .content-who .who-body .list-group:nth-of-type(2) {
+    margin-top: 0;
 }
 
 #who .content-who .who-body .list-group li {
     width: 50%;
     background-color: var(--yellow-500);
     border-color: var(--white);
+    text-align: left;
+    padding: 1rem 1.5rem;
 }
 
 /*how it works*/
