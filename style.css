@@ -60,7 +60,7 @@
 /*hero image*/
 #heroimage {
     width: 100%;
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/banner-img..png?raw=true');
+    background-image: url('https://raw.githubusercontent.com/ivankstro7/turintravel/refs/heads/main/assets/banner-img.webp');
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
