@@ -20,7 +20,7 @@
 
 /*navbar*/
 .navbar {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, rgba(30, 47, 34, 1), rgba(30, 47, 34, 0));
     backdrop-filter: blur(4px);
     padding: 12px 24px !important;
 }
@@ -38,7 +38,8 @@
 }
 
 .navbar .navbar-collapse .nav-link {
-    color: var(--gray-900);
+    font-size: 1.125rem;
+    color: var(--green-gray-200);
 }
 
 .navbar .navbar-collapse .navbar-buttons-grid {
@@ -855,6 +856,10 @@
 
 /*desktop, 1200px*/
 @media (min-width: 1200px) {
+    .navbar .navbar-collapse .nav-link:hover {
+        color: var(--gray-900);
+    }
+
     #how-it-works .works-list {
         display: flex;
         align-items: center;
