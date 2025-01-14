@@ -298,7 +298,7 @@
 
 /*destinatios*/
 #destinations {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/destinations-bg.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/destinations-bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -477,7 +477,7 @@
 }
 
 #destinations .destinations-model {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/destination-img.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/destinations-img.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
