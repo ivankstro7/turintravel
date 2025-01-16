@@ -140,7 +140,7 @@
 }
 
 #heroimage .content-heroimage .heroimage-img-grid .img-europa {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/paris.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/europa.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@
 }
 
 #heroimage .content-heroimage .heroimage-img-grid .img-medio-oriente {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/medio-oriente.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/MEDIO-ORIENTE.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@
 }
 
 #heroimage .content-heroimage .heroimage-img-grid .img-tierra-santa {
-    background-image: url('https://github.com/ivankstro7/turintravel/blob/main/assets/tierra-santa.png?raw=true');
+    background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/TIERRA-SANTA.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,6 +228,7 @@
 }
 
 #who .content-who .who-images {
+    height: auto;
     display: flex;
     column-gap: 8px;
     overflow: hidden;
@@ -236,6 +237,7 @@
 
 #who .content-who .who-images img {
     width: 50%;
+    object-fit: fill;
 }
 
 #who .content-who .who-body h2 {
@@ -845,11 +847,14 @@
 
     #who .content-who {
         display: flex;
+        align-items: center;
+        margin-bottom: 1.25rem;
     }
 
-    #who .content-who .who-images img {
-        height: 50vh;
-    }
+    #who .content-who .who-images {
+        height: 100%;
+        margin-bottom: 0;
+    } 
 
     #who .content-who .who-body {
         padding: 1rem;
