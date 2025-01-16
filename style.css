@@ -237,7 +237,7 @@
 
 #who .content-who .who-images img {
     width: 50%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 #who .content-who .who-body h2 {
