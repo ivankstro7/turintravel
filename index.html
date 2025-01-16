@@ -768,14 +768,6 @@
 <script>
     // Seleccionar el elemento del offcanvas
     const videoOffcanvas = document.getElementById('offcanvasTop');
-    const iframe = document.getElementById('youtubeVideo');
-    const iframe = document.getElementById('youtubeVideo');
-
-    // Evento cuando se abre el offcanvas
-    videoOffcanvas.addEventListener('show.bs.offcanvas', function () {
-        // Agregar parámetro autoplay al video
-        iframe.src = "https://youtu.be/_IDgX6P1f-8?si=QgDXqser9T1YNNq3autoplay=1";
-    });
 
     // Agregar un listener al evento hidden.bs.offcanvas
     videoOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
