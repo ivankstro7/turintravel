@@ -510,15 +510,15 @@
             <div class="destinations-model">
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                     aria-controls="offcanvasTop"><img
-                        src="https://raw.githubusercontent.com/ivankstro7/turintravel/af86238871a07e6c9db4383bd065dced884b6fbf/assets/icons/play_circle_52dp.svg"
+                        src="https://raw.githubusercontent.com/ivankstro7/turintravel/de0ef6bae78b44db9b5adfda0bd0eefc7af6a1ae/assets/icons/logo-youtube.svg"
                         alt=""></button>
-                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
-                    aria-labelledby="offcanvasTopLabel" onhidden="this.querySelector('iframe').src=this.querySelector('iframe').src">
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+                    onhidden="this.querySelector('iframe').src=this.querySelector('iframe').src">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <iframe width="100%" height="100%"
+                        <iframe id="youtubeVideo" width="100%" height="100%"
                             src="https://www.youtube.com/embed/_IDgX6P1f-8?si=17Sb9nhHW5xWmai6"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -768,6 +768,14 @@
 <script>
     // Seleccionar el elemento del offcanvas
     const videoOffcanvas = document.getElementById('offcanvasTop');
+    const iframe = document.getElementById('youtubeVideo');
+    const iframe = document.getElementById('youtubeVideo');
+
+    // Evento cuando se abre el offcanvas
+    videoOffcanvas.addEventListener('show.bs.offcanvas', function () {
+        // Agregar parámetro autoplay al video
+        iframe.src = "https://youtu.be/_IDgX6P1f-8?si=QgDXqser9T1YNNq3autoplay=1";
+    });
 
     // Agregar un listener al evento hidden.bs.offcanvas
     videoOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
@@ -775,4 +783,5 @@
         iframe.src = iframe.src; // Reinicia el iframe para detener el video
     });
 </script>
+
 </html>
