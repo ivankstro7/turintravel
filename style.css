@@ -385,12 +385,6 @@
     font-family: var(--secondary-font);
 }
 
-#destinations .content-destinations .list-group .card .card-img-overlay p {
-    font-family: var(--secondary-font);
-    font-weight: 300;
-    color: var(--white);
-}
-
 #destinations .content-destinations .list-group .card .card-img-overlay .card-detail {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -628,10 +622,9 @@
     font-family: var(--secondary-font);
 }
 
-#Circuits .content-circuits .list-group .card .card-img-overlay p {
-    font-family: var(--secondary-font);
-    font-weight: 300;
-    color: var(--white);
+#Circuits .content-circuits .list-group .card .card-img-overlay .card-detail {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #Circuits .content-circuits .list-group .card .card-img-overlay .card-detail .date {
@@ -647,6 +640,7 @@
 
 #Circuits .content-circuits .list-group .card .card-img-overlay .card-detail .date p {
     font-family: var(--secondary-font);
+    color: var(--white);
     margin-bottom: 0;
 }
 
@@ -662,6 +656,7 @@
 
 #Circuits .content-circuits .list-group .card .card-img-overlay .card-detail .days p {
     font-family: var(--secondary-font);
+    color: var(--white);
     margin-left: 0.5rem;
     margin-bottom: 0;
 }
