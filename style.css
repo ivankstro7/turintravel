@@ -374,6 +374,7 @@
 
 #destinations .content-destinations .list-group .card .card-img-overlay {
     top: auto !important;
+    bottom: 16px !important;
     color: var(--white);
 }
 
@@ -668,6 +669,17 @@
     padding: 12px 16px;
 }
 
+#Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons .destinations-detail small {
+    font-family: var(--secondary-font);
+}
+
+#Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons .destinations-detail p {
+    font-family: var(--primary-font);
+    font-size: 2.25rem;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
 /*footer*/
 #footer {
     background-color: #22262F;
@@ -827,7 +839,7 @@
     }
 
     #Circuits .content-circuits .list-group .card {
-        width: 48%;
+        width: 43%;
     }
 
     #footer .content-footer .footer-detail .footer-logo img {
@@ -891,16 +903,6 @@
         width: 36%;
     }
 
-    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons .btn-light {
-        width: 40%;
-    }
-
     #destinations .content-destinations #carouselExampleSlidesOnly {
         padding: 3rem;
     }
@@ -908,10 +910,6 @@
     #destinations .content-destinations .rate {
         width: 50%;
         margin: auto;
-    }
-
-    #Circuits .content-circuits .list-group .card {
-        width: 49%;
     }
 }
 
@@ -944,6 +942,10 @@
     #how-it-works .works-list li .item-header img {
         margin-right: 0.5rem;
         margin-bottom: 0;
+    }
+
+    #destinations .content-destinations .list-group .card {
+        width: 33%;
     }
 
     #Circuits .content-circuits .list-group .card {
@@ -1070,6 +1072,8 @@
 
     #destinations .content-destinations .list-group .card .card-img-overlay .destinations-buttons {
         height: 7vh;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -1100,8 +1104,34 @@
         margin-bottom: 1.5rem;
     }
 
+    #Circuits .content-circuits .overflow-x-auto::-webkit-scrollbar {
+        height: 4px;
+        /* Altura de la barra de scroll */
+        background-color: var(--green-200);
+        /* Color de fondo del área de scroll */
+        border-radius: 1rem;
+    }
+
+    #Circuits .content-circuits .overflow-x-auto::-webkit-scrollbar-thumb {
+        background-color: var(--green-500);
+        /* Color del "pulgar" del scroll */
+        border-radius: 3rem;
+        /* Bordes redondeados */
+    }
+
+    #Circuits .content-circuits .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+        background-color: var(--green-900);
+        /* Color del "pulgar" al pasar el mouse */
+    }
+
+    #Circuits .content-circuits .overflow-x-auto::-webkit-scrollbar-track {
+        background-color: #e0e0e0;
+        /* Color del track (área detrás del "pulgar") */
+    }
+
     #Circuits .content-circuits .list-group {
         padding-top: 2.25rem;
+        padding-bottom: 1rem;
     }
 
     #Circuits .content-circuits .list-group .card {
@@ -1113,10 +1143,14 @@
     }
 
     #Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 6vh;
     }
 
     #Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons .btn-light {
+        width: 40%;
         height: 6vh;
     }
 
