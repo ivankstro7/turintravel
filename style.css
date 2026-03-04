@@ -324,6 +324,60 @@
     margin-bottom: 0;
 }
 
+/*cta italia*/
+.hero-section {
+    background-color: #1a304a;
+    overflow: hidden;
+    color: #E0EBFC;
+    padding: 1.5rem;
+}
+
+.feature-card {
+    background-color: #DAF0FF;
+    border-radius: 12px;
+    border: 1px solid #1A73E8;
+    padding: 1rem;
+    color: #152F56;
+    height: 100%;
+}
+
+.wrap-title h2, 
+.wrap-title span {
+    font-size: 2.25rem;
+}
+
+.wrap-title .paragraph {
+    font-family: var(--secondary-font);
+}
+
+.wrap-title .limited-spaces {
+    font-family: var(--secondary-font);
+    font-style: italic;
+}
+
+.btn-light-blue {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    background-color: #0d6efd;
+    padding: 1rem 2.25rem;
+    border-radius: 0.5rem;
+}
+
+.text-handwritten {
+    font-family: 'Cursive', sans-serif;
+    /* Reemplazar por la fuente real */
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Ajuste para la imagen de la viajera */
+.traveler-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /*destinatios*/
 #destinations {
     background-image: url('https://github.com/ivankstro7/turintravel/raw/refs/heads/main/assets/destinations-bg.webp');
@@ -534,13 +588,20 @@
 }
 
 #destinations .destinations-model .offcanvas.offcanvas-top {
-    top: 50%; /* Comienza desde la mitad de la pantalla */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta la posición al centro exacto */
-    width: 100%; /* Mantén el ancho responsivo */
-    max-width: 768px; /* Ajusta el tamaño máximo según tu diseño */
-    height: auto; /* Permite que el contenido determine la altura */
-    max-height: 100vh; /* Asegúrate de que no sea más alto que el viewport */
+    top: 50%;
+    /* Comienza desde la mitad de la pantalla */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición al centro exacto */
+    width: 100%;
+    /* Mantén el ancho responsivo */
+    max-width: 768px;
+    /* Ajusta el tamaño máximo según tu diseño */
+    height: auto;
+    /* Permite que el contenido determine la altura */
+    max-height: 100vh;
+    /* Asegúrate de que no sea más alto que el viewport */
     border-bottom: 0;
 }
 
@@ -893,7 +954,7 @@
     #who .content-who .who-images {
         height: 100%;
         margin-bottom: 0;
-    } 
+    }
 
     #who .content-who .who-body {
         padding: 1rem;
