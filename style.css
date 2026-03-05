@@ -376,13 +376,17 @@
 /* --- Ajustes Responsivos de Padding Exterior --- */
 
 .feature-card {
-    font-family: var(--secondary-font);
     background-color: #DAF0FF;
     border-radius: 12px;
     border: 1px solid #1A73E8;
     padding: 1rem;
-    color: #152F56;
     height: 100%;
+}
+
+.feature-card h5,
+.feature-card p {
+    font-family: var(--secondary-font);
+    color: #152F56;
 }
 
 .traveler-img {
@@ -1029,10 +1033,7 @@
         padding: 0 2.25rem;
     }
 
-    .traveler-img {
-        max-height: none;
-        /* En desktop que use su tamaño original */
-    }
+
 
     #destinations .content-destinations #carouselExampleSlidesOnly {
         padding: 3rem;
@@ -1073,6 +1074,10 @@
     #how-it-works .works-list li .item-header img {
         margin-right: 0.5rem;
         margin-bottom: 0;
+    }
+
+    #hero-section .content-hero {
+        padding: 3rem 3rem 0 3rem;
     }
 
     #destinations .content-destinations .list-group .card {
