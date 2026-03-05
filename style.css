@@ -325,14 +325,58 @@
 }
 
 /*cta italia*/
-.hero-section {
-    background-color: #1a304a;
-    overflow: hidden;
+#hero-section {
     color: #E0EBFC;
-    padding: 1.5rem;
 }
 
+/* Aseguramos que el main ocupe toda la pantalla y sea el contenedor de referencia */
+.banner-italy {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    /* Evita scrolls raros */
+}
+
+/* --- Estilos para el Fondo Dinámico --- */
+.dynamic-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Al fondo de todo */
+}
+
+.content-hero {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* Hace que la imagen actúe como "background-size: cover" */
+.bg-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Ajustar según tus imágenes exportadas */
+}
+
+/* --- Estilos para la Capa Azul (El overlay) --- */
+.blue-overlay {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(21, 47, 86, 0.8);
+    /* Azul con 80% opacidad */
+    z-index: 2;
+    /* Sobre el fondo, debajo de los elementos interactivos */
+}
+
+/* --- Ajustes Responsivos de Padding Exterior --- */
+
 .feature-card {
+    font-family: var(--secondary-font);
     background-color: #DAF0FF;
     border-radius: 12px;
     border: 1px solid #1A73E8;
@@ -341,7 +385,14 @@
     height: 100%;
 }
 
-.wrap-title h2, 
+.traveler-img {
+    height: auto;
+    object-fit: contain;
+    /* Evita que en tablet se pierda la proporción si el row crece mucho */
+    max-height: 500px;
+}
+
+.wrap-title h2,
 .wrap-title span {
     font-size: 2.25rem;
 }
@@ -891,6 +942,11 @@
         height: 29vh;
     }
 
+    .blue-overlay {
+        border-radius: 1.5rem;
+        /* Aparecen las esquinas */
+    }
+
     #destinations .content-destinations .list-group .card {
         width: 43%;
     }
@@ -962,6 +1018,20 @@
 
     #how-it-works .works-list .img-model {
         width: 36%;
+    }
+
+    .blue-overlay,
+    .banner-italy {
+        min-height: auto;
+    }
+
+    .wrap-title {
+        padding: 0 2.25rem;
+    }
+
+    .traveler-img {
+        max-height: none;
+        /* En desktop que use su tamaño original */
     }
 
     #destinations .content-destinations #carouselExampleSlidesOnly {
