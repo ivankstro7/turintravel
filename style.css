@@ -14,8 +14,19 @@
     --green-900: #364E3B;
     --yellow-500: #FDD981;
     --red-500: #D71712;
+    --blue-700: #1A73E8;
     --primary-font: 'Bebas Neue', serif;
     --secondary-font: 'Noto Sans', serif;
+}
+
+/*header*/
+.header {
+    background-color: var(--blue-700);
+    color: var(--white);
+} 
+
+.header p {
+    font-family: var(--secondary-font);
 }
 
 /*navbar*/
@@ -98,7 +109,7 @@
 }
 
 #heroimage .content-heroimage {
-    padding-top: 8rem;
+    padding-top: 16rem;
 }
 
 #heroimage .content-heroimage .heroimage-title {
@@ -938,13 +949,17 @@
 
 /*tablets, 768px*/
 @media (min-width: 768px) {
+    #heroimage .content-heroimage{
+        padding-top: 12rem;
+    }
+
     #heroimage .content-heroimage .heroimage-img-grid .img-europa {
         height: 29vh;
     }
 
     #heroimage .content-heroimage .heroimage-img-grid .img-tierra-santa {
         height: 29vh;
-    }
+    }    
 
     .blue-overlay {
         border-radius: 1.5rem;
@@ -1282,7 +1297,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 6vh;
+        /*height: 6vh;*/
     }
 
     #Circuits .content-circuits .list-group .card .card-img-overlay .destinations-buttons .btn-light {
