@@ -430,10 +430,10 @@
 }
 
 .text-handwritten {
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     /* Reemplazar por la fuente real */
     font-style: italic;
-    opacity: 0.8;
+    font-size: 1.5rem;
 }
 
 /* Ajuste para la imagen de la viajera */
